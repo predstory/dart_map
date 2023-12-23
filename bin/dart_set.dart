@@ -1,5 +1,20 @@
-import 'package:dart_set/dart_set.dart' as dart_set;
+void main() {
+  Map<String, dynamic> aleksandr = {
+    "name": "Aleksandr",
+    "age": 29,
+    "city": "SPB",
+    "deti": 2,
+    //"ключ" : "значение"
+  };
 
-void main(List<String> arguments) {
-  print('Hello world: ${dart_set.calculate()}!');
+  aleksandr["zp"] = 100000; //таким образом можно добавить в сет пару
+  //ключ значение
+
+  aleksandr["male"] = "female";
+
+  print(aleksandr.keys); //возвращает ключи
+  print(aleksandr.values); //возвращает значения
+  print(aleksandr.length); //возвращает ответ сколько связок ключ : значение
+  print(aleksandr.isEmpty); //там пусто?
+  print(aleksandr.isNotEmpty); //там не пусто, да?
 }
